@@ -11,6 +11,7 @@ public class CustomListTest {
         li.addCity(calg);
         assertTrue(li.hasCity(calg));
     }
+    @Test
     public void testdelcit(){
         CustomList li = new CustomList();
         City calg = new City("Calgary","AB");
