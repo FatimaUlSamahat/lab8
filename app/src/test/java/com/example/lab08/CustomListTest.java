@@ -20,6 +20,7 @@ public class CustomListTest {
         li.deleteCity(calg);
         assertFalse(li.hasCity(calg));
     }
+    @Test
     public void testCountCit()
     {
         CustomList li = new CustomList();
