@@ -20,4 +20,15 @@ public class CustomListTest {
         li.deleteCity(calg);
         assertFalse(li.hasCity(calg));
     }
+    public void testCountCit()
+    {
+        CustomList li = new CustomList();
+        City calg = new City("Calgary","AB");
+        City e = new City("Edmonton","AB");
+        assertEquals(0, li.countCities());
+        li.addCity(calg);
+        assertEquals(1, li.countCities());
+        li.addCity(e);
+        assertEquals(2, li.countCities());
+    }
 }
